@@ -1,0 +1,12 @@
+{
+	"name": "LS_SQLTABLE_PARQUET",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://test0009.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDhDMTA1MjA1LTg4NkMtNDg3OS04MTZFLUJGMjczRjY4OTZGMl8xMjI5MmM4Yi0xNDY5LTQ2NGQtODdiZS1mMDU3ODNiNzc1YWMiDQp9"
+		}
+	}
+}
