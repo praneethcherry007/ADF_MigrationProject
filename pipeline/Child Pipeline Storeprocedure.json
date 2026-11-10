@@ -1,0 +1,41 @@
+{
+	"name": "Child Pipeline Storeprocedure",
+	"properties": {
+		"activities": [
+			{
+				"name": "SP_UPDT_WTRMRK",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[UpdateWatermark]",
+					"storedProcedureParameters": {
+						"TableName": {
+							"value": "",
+							"type": "String"
+						},
+						"TableSchema": {
+							"value": "",
+							"type": "String"
+						},
+						"WatermarkColumn": {
+							"value": "",
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_SQLSERVER_TBLLKUP",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": []
+	}
+}
