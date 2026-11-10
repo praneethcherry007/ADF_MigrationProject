@@ -1,5 +1,5 @@
 {
-	"name": "Parent Pipeline Orchestration 2",
+	"name": "Parent Pipeline Orchestration",
 	"properties": {
 		"activities": [
 			{
@@ -48,6 +48,7 @@
 						"value": "@activity('LKUP_SQLTABLE_WATERMRK_DW').output.value",
 						"type": "Expression"
 					},
+					"isSequential": false,
 					"activities": [
 						{
 							"name": "Exec_SQL_Incre",
@@ -59,7 +60,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"pipeline": {
-									"referenceName": "Child Pipeline inc2",
+									"referenceName": "Child Pipeline Incremental",
 									"type": "PipelineReference"
 								},
 								"waitOnCompletion": true,

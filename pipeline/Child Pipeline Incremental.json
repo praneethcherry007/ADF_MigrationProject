@@ -1,5 +1,5 @@
 {
-	"name": "Child Pipeline inc2",
+	"name": "Child Pipeline Incremental",
 	"properties": {
 		"activities": [
 			{
