@@ -56,7 +56,17 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": [],
+							"userProperties": [
+								{
+									"name": "TableSchema"
+								},
+								{
+									"name": "TableName"
+								},
+								{
+									"name": "WatermarkColumn"
+								}
+							],
 							"typeProperties": {
 								"source": {
 									"type": "SqlServerSource",
@@ -116,7 +126,7 @@
 							]
 						},
 						{
-							"name": "Execute Pipeline1",
+							"name": "EXEC_UPDATE_W",
 							"type": "ExecutePipeline",
 							"dependsOn": [
 								{
@@ -129,8 +139,17 @@
 							"policy": {
 								"secureInput": false
 							},
-							"userProperties": [],
+							"userProperties": [
+								{
+									"name": ""
+								},
+								null
+							],
 							"typeProperties": {
+								"pipeline": {
+									"referenceName": "pipeline1",
+									"type": "PipelineReference"
+								},
 								"waitOnCompletion": true
 							}
 						}
