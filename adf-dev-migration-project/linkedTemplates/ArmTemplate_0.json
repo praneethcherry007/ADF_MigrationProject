@@ -317,7 +317,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/Child Pipeline inc2')]",
+			"name": "[concat(parameters('factoryName'), '/Child Pipeline Incremental')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -515,7 +515,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/Parent Pipeline Orchestration 2')]",
+			"name": "[concat(parameters('factoryName'), '/Parent Pipeline Orchestration')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -579,7 +579,7 @@
 									"userProperties": [],
 									"typeProperties": {
 										"pipeline": {
-											"referenceName": "Child Pipeline inc2",
+											"referenceName": "Child Pipeline Incremental",
 											"type": "PipelineReference"
 										},
 										"waitOnCompletion": true,
@@ -614,7 +614,7 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/DS_SQLSERVER_TBLLKUP')]",
-				"[concat(variables('factoryId'), '/pipelines/Child Pipeline inc2')]"
+				"[concat(variables('factoryId'), '/pipelines/Child Pipeline Incremental')]"
 			]
 		}
 	]
