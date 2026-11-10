@@ -1,0 +1,15 @@
+{
+	"name": "adf-dev-migration-project",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "409b7f36-b7ce-4f97-af9e-986adcf541ce",
+		"tenantId": "fa2f9090-9f68-42bc-b9c1-05bd92c65d6d"
+	}
+}
